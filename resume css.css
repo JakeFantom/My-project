@@ -1,0 +1,207 @@
+body {
+    background: #f1f1f1;
+    background-image: url("dog_dance.gif");
+    background-repeat: repeat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+} 
+
+a:active {
+    color: greenyellow
+}
+
+a:visited {
+    color: grey;
+}
+
+.container {
+    width: 50%;
+    height: 50px;
+    float: center;
+    max-width: 700px;
+    margin: 0 auto ;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}
+
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* .display {
+    display: flex;
+    flex-direction: column;
+} */
+
+.info-text {
+    font-style: italic;
+    font-weight: solid;
+    color: orange;
+    margin: 0%;
+}
+
+
+.Box {
+    background: white;
+    color: #000000;
+    padding: 20px;
+    border: 10px solid;
+    border-color: greenyellow transparent transparent green; 
+    border-radius: 20px;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color:#111;
+    margin-bottom: 10;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3)  {
+    color: green;
+} 
+
+@media (max-width: 850px) {
+    .info {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.bg-black {
+    background: #ff9812a9;
+}
+
+.bg-grey {
+    background: rgba(1, 255, 56, 0.548)
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+h4 {
+    font-size: 25px;
+    /* font-family: Verdana;
+    font-weight: normal;
+    color:brown; */
+    /* -webkit-text-stroke: 1px #000; */
+}
+
+p {
+    /* -webkit-text-stroke: 1px #000; */
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: normal;
+    color: black;
+}
+
+a {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: italic;
+    color: black;
+    /* -webkit-text-stroke: 1px #000; */
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.from-row {
+margin-bottom: 10px;
+display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group last-child {
+    margin-right: 0;;
+}
+
+@media (max-width: 650px) {
+     .form-row {
+        display: block;
+     }
+}
+
+.form-group label {
+    display:block;
+    font-size: 14px;
+    color: #666
+}
+
+.form-group input
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
