@@ -8,6 +8,29 @@
     <title>Дизайнер карт</title>
     <link rel="stylesheet" href="resume css.css">
 </head>
+    <div class="cursor-light"></div>
+<style>
+.cursor-light {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(rgba(138, 43, 226, 0.2), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body:hover .cursor-light {
+  opacity: 1;
+}
+</style>
+<script>
+document.addEventListener('mousemove', e => {
+  document.querySelector('.cursor-light').style.left = `${e.clientX}px`;
+  document.querySelector('.cursor-light').style.top = `${e.clientY}px`;
+});
+</script>
 <body>
     
     <div class="container">
